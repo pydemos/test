@@ -53,8 +53,9 @@ print(response.content)
 print(response.url)
 #查看响应头不部的字符编码
 print(response.encodeing)
-#查看响应码
+#查看响应码, 修改代码
 print(response.status_code)
+
 '''
 
 
