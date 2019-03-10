@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+####ProxyHandler处理器(代理):
+1代理的原理:在请求目的网站之前,先请求代理服务器,然后让代理服务器去请求目的的网站,代理服务器拿到目的的网站的数据后,再转发给我们代码
+2.http://httpbin.org/ip 这个网站可以方便查看http请求的一些参数
+3.在代码中使用代理:
+  *使用urllib.request.Proxydler,传入一个代理,这个代理是一个字典,字典的key依赖于代理服务器能够接受的类型,一般是'http'或'https',值是'ip:port'
+  *使用以上创建的'handler',以及'request.bulid_opener'创建一个'opener'对象
+  *使用上一步创建的'opener',调用'open'函数.发起请求
+示例代理如下:
+#python
+from urllib import request
+url = 'http://httpbin.org/ip'
+#1.使用proxyiHandler，传入代理构建一个handler
+handler = request.ProxyHandler({'http':'113.13.160.100:9999'})
+#2.使用上面创建的handlor构建一个opener
+opener = request.build_opener(handler)
+#3.使用opener去发送个请求
+resp= opener.open('http://httpbin.org/ip')
+print(resp.read())
+什么是cookie：在网站中，http请求是无状态的。也就是说即使第一次和服务器连接后并且登录成功后，第二次请求服务器依然不能知道当前请求是哪个用户。cookie的出现就是为了解决这个问题，第一次登录后服务器返回一些数据（cookie)给浏览器，然后浏览器保存在本地，当该用户发送第二次请求的时候，就会自动的把上次请求存储的 cookie数据自动的携需给服务器，服务器通过浏览器携带的数
+据就能判断当前用户是哪个了。cookie存储的数据量有限，不同的刻览器有不同的存储大小，但一般不超过4KB。因此使
+用cookie只能存储一些小量的数据。
+cookie的格式：et-Cookie:  NANE-VALUE:  Expires/Max-age-DATE: Path-PATH: Domain-OOMAIIN_NAME:  SECURE
+参数意义：
+·NAME：cookie的名字。
+·VALUE:cookie的值。
+·Expires；cookie的过期时间。
+·Path：cookie作用的路径。
+·Domain：cookie作用的域名。
+·SECURE：是否只在https协议下起作用。
+使用cookielib库和HTTPCookieProcessor模拟登录：
+Cookie 是指网站服务器为了辨别用户身份和进行Session跟踪，而储存在用户刻览器上的文本文件，Cookie可以保持登录信息到用户dated 10 minutes ago
+下次与服务器的会话。
+##response.test和 response.conetnet的区别
+# 1response.conetnet这个是直接从网络上面抓取的数据,没有经过任何的解码.所以
+# bytes类型,其实在硬盘和在网络上传输的字符串都是bytes类型
+# 2response.test这个是requests,将response.content进行解码的字符串,解码需要指定一个编码方式,
+# requests会根据自己的猜测来判断编码的方式,所有的时候会猜测错误.产生乱码.这时候
+# 需要使用'response.conten.decode('utf-8')'进行手动解码
+
+##发送Post 请求:发送psot 请求非常简单,直接调用'requests.post'的方法就可以
+如果返回的是json的数据那么可以调用response.josn(),来将josn字符串转换为字典或者列表
+##使用代理:在请求方法中,传递'proxies'参数就可以了
+##处理cookise:
+如果想要在多次请求中共享cookise,那么应该使用session,示例代码如下:
+''''python
+import requests
+url = 'http://www.renren.com/PLogin.do'
+data = {
+        'email': "13045929129",
+        'password': 'tai+1992'
+    }
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) '
+                  'AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/63.0.3239.132 Safari/537.36',
+}
+session = requests.Session()
+session.post(url, data=data, headers=headers)
+response = session.get('http://wmw.renren.com/880151247/profile')
+with open('renren.html', 'w', encoding='utf-8')as fp:
+    fp.write(response.text)
+
+##处理没有授权的https协议:
+resp = requests.get('www.12306.com',verify= False)#get 后加上verify= False
+print(resp.content.decode('utf-8'))
+
+
+##xpath语法
+##使用方式：
+使用//获取整个页面中的元素，然后写标签名，然后再写谓词进行提取.比如:
+'''
+//div[@class='abc']
+'''
+
+##需要注意的知识点:
+1. /和//的区别:/代表只获取直接子节点.//获取子孙节点.一般//用的比较多,当然也要视情况而定.
+2 contains :有时候某个属性中包含了多个值,那么可以使用'contains'函数.示例代码如下:
+'''
+//div[contains(@class,'job_detail')]
+
+'''
+3谓词中的下标是从1 开始,不是从零开始的
+
+使用lxml解析HTML代码:
+1解析html字符串:使用'lxml.etree.html'进行解析,示例代码如下
+'''python
+    htmlElment = etree.HTML(text)
+    print(etree.topstring(htmlElment,encoding='utf-8',decode('utf-8')
+'''
+2解析html文件,使用'lxml.etree.parase'进行解析.示例代码如下:
+'''python
+    htmlElment = etree.parse('tencent.html')
+    print(etree.topstring(htmlElment,encoding='utf-8',decode('utf-8')
+'''
+这个函数默认使用的是'xml'解析器,所以如果碰到一些不规范的'html'代码的时候就会解析错误.需自己创建'html'解析器
+'''python
+parser=etree.HTMLParser(encoding='utf-8')
+htmlElement=etree.parse("lagou.html",parser=parser)
+print(etree.tostring(htmlElement,encoding='utf-8').decode('utf-8)')
+##1xml结合xpath注意事项：
+1.使用xpath语法。应该使用Element.xpath方法。来执行xpath的选择。示例代码如下：
+'''python
+trs=html.xpath("//tr[position()>1]")
+xpath函数返回来的永远是一个列表。
+2.获取某个标签的属性：
+'''python
+href=html.xpath("//a/@href")
+#获取a标签的href属性对应的值
+'''
+3.获取文本，是通过xpath中的“text（）函数。示例代码如下：
+'''python
+address=tr.xpath("./td[4]/text()")[0]
+'''
+4. 在某个标签下,在执行xpath函数.获取这个标签下的子孙元素
+    那么应该在//之前加一个点,代表在当前元素下获取.示例代码如下:
+'''python
+adress =  tr.xpath("./td[4]/text()")[0]
+'''
