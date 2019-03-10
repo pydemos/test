@@ -1,5 +1,6 @@
-#! /usr/bin/env python
+﻿#! /usr/bin/env python
 #coding=utf-8
+#admin
 from urllib import  request
 from http.cookiejar import  MozillaCookieJar
 cookiejar = MozillaCookieJar('cookie.tet')
