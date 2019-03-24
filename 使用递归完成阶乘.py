@@ -6,7 +6,7 @@
 #否则程序在调用自己很多次之后,会崩溃
 def test(num):
     i = 1
-    sumResult =0
+    sumResult = 0
     while i <= num:
         sumResult = sumResult + i
         i += 1
