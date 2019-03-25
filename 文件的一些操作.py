@@ -15,3 +15,5 @@ f = open('121.txt','r')
 content  = f.readlines()
 while  len(content)>0 :
     content  = f.readlines()
+
+
