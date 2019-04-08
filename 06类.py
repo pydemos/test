@@ -11,14 +11,17 @@
 class Dog :
     color = '白色'
     sex = '公'
-    def eat (self):
-        print('狗在吃骨头')
+    def __setName(self,newName):
+        self.name  = newName
+        self.__money = 100
+    def newSetName(self,newName):
+        self.__setName(newName)
+    def showMoney(self):
+        print('%s 还剩下这么多钱'%self.__money)
     def run(self):
-        print('狗在跑')
-
-jinMao = Dog.d()
-jinMao.eat()
-jinMao.run()
-hasiqi = Dog()
-zangao = Dog()
+        print('%s狗狗正在跑'%self.name)
+    def eat(self):
+        print('%s 狗狗正在吃'%self.name)
+jinMao = Dog()
+jinMao.newSetName('haha')
 
