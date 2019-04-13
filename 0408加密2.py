@@ -77,7 +77,7 @@ def jieMi:
     newFile.close()
     fileWord.close()
 #创建功能菜单
-while True :
+while True
     #请用户输入想要的操作1-加密2-解密3-退出
     try:
         work = int(input('请输入想要的操作1-加密2-解密3-退出:'))

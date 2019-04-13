@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="129cd629-d8c3-47ce-9f7d-8e4b10b80785" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/0401创建类.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0402析构.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0403 类中的重写.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0403多继承.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0403继承.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0403继承2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0404多态.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0408加密.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0408加密2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0409小明开枪打老王.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0330练习创建类.py" beforeDir="false" afterPath="$PROJECT_DIR$/0330练习创建类.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06类.py" beforeDir="false" afterPath="$PROJECT_DIR$/06类.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0408加密2.py" beforeDir="false" afterPath="$PROJECT_DIR$/0408加密2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +17,7 @@
     <SUITE FILE_PATH="coverage/test$0402.coverage" NAME="0402析构 Coverage Results" MODIFIED="1554199272088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$0330.coverage" NAME="0330练习创建类 Coverage Results" MODIFIED="1554199432843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$06.coverage" NAME="06类 Coverage Results" MODIFIED="1554120949063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$0409.coverage" NAME="0409小明开枪打老王 Coverage Results" MODIFIED="1555148364179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$0401.coverage" NAME="0401析构 Coverage Results" MODIFIED="1554285570358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
     <SUITE FILE_PATH="coverage/test$0404.coverage" NAME="0404多态 Coverage Results" MODIFIED="1554371963644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$0403.coverage" NAME="0403多继承 Coverage Results" MODIFIED="1554299391470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -35,15 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06类.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0330练习创建类.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,11 +72,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0408加密2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+            <state relative-caret-position="1463">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/0409小明开枪打老王.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -158,6 +150,8 @@
         <option value="$PROJECT_DIR$/0404多态.py" />
         <option value="$PROJECT_DIR$/0408加密.py" />
         <option value="$PROJECT_DIR$/0408加密2.py" />
+        <option value="$PROJECT_DIR$/小明开枪打老王0409.py" />
+        <option value="$PROJECT_DIR$/0409小明开枪打老王.py" />
       </list>
     </option>
   </component>
@@ -168,8 +162,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="774" />
-    <option name="y" value="114" />
+    <option name="x" value="311" />
+    <option name="y" value="108" />
     <option name="width" value="1194" />
     <option name="height" value="892" />
   </component>
@@ -181,6 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,7 +187,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.0408加密">
+  <component name="RunManager" selected="Python.0409小明开枪打老王">
     <configuration name="0403 类中的重写" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,28 +246,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0403继承2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="0403继承" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0403继承.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -348,13 +320,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="0409小明开枪打老王" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0409小明开枪打老王.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.0409小明开枪打老王" />
         <item itemvalue="Python.0408加密" />
         <item itemvalue="Python.0404多态" />
         <item itemvalue="Python.0403 类中的重写" />
         <item itemvalue="Python.0403继承2" />
-        <item itemvalue="Python.0403继承" />
       </list>
     </recent_temporary>
   </component>
@@ -376,23 +370,25 @@
       <workItem from="1554082837541" duration="4712000" />
       <workItem from="1554198102017" duration="23653000" />
       <workItem from="1554687123823" duration="3165000" />
-      <workItem from="1554719860203" duration="3222000" />
+      <workItem from="1554719860203" duration="3504000" />
+      <workItem from="1554777605863" duration="3473000" />
+      <workItem from="1554951038244" duration="1200000" />
+      <workItem from="1555134039971" duration="10545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47877000" />
+    <option name="totallyTimeSpent" value="63377000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="774" y="29" width="1194" height="977" extended-state="0" />
-    <editor active="true" />
+    <frame x="311" y="108" width="1194" height="892" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12874779" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1340388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33448672" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33377308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,6 +532,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/0408加密2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1463">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/0403继承2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
@@ -557,10 +560,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0408加密2.py">
+    <entry file="file://$PROJECT_DIR$/0409小明开枪打老王.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        <state relative-caret-position="398">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
         </state>
       </provider>
     </entry>
